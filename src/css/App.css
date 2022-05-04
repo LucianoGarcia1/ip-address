@@ -1,0 +1,110 @@
+@import url(reset.css);
+@import url(variables.css);
+
+
+.root, .app{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app header{
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  background-color: var(--blue);
+}
+
+header h1{
+  font-size: 1.6em;
+  font-weight: 600;
+  color: var(--black);
+  text-align: center;
+}
+
+header .swapper{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.swapper input, button{
+  border: transparent;
+  height: 40px;
+  border-radius: 10px;
+  background-color: var(--white);
+}
+
+.swapper input{
+  min-width: 25%;
+  padding-left: 20px;
+  font-size: 0.9em;
+  color: var(--black);
+}
+
+input::placeholder{
+  color: var(--black);
+}
+
+.swapper button{
+  min-width: 5%;
+  cursor: pointer;
+}
+
+ion-icon{
+  font-size: 1.4em;
+  color: var(--black);
+}
+
+.Conteudo{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  min-height: calc(100vh - 200px);
+}
+
+.Conteudo div{
+  min-width: 20%;
+  height: 200px;
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.app .Mapa{
+  width: 80%;
+  height: 400px;
+  text-align: center;
+}
+@media screen and (max-width: 730px){
+  .swapper input{
+    width: 60%;
+  }
+  .swapper button{
+    min-width: 20%;
+  }
+
+  .Conteudo{
+    padding: 30px 0;
+  }
+
+  .Conteudo div{
+    min-width: 80%;
+  }
+
+}
